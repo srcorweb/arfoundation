@@ -1,7 +1,10 @@
+using System;
 using UnityEngine.XR.ARSubsystems;
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
-    public class RequiresObjectTracking : RequiresARSubsystem<XRObjectTrackingSubsystem, XRObjectTrackingSubsystemDescriptor>
+    [Serializable]
+    public class RequiresObjectTracking
+        : RequiresARSubsystem<XRObjectTrackingSubsystem, XRObjectTrackingSubsystemDescriptor>
     { }
 }

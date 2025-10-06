@@ -1,7 +1,9 @@
+using System;
 using UnityEngine.XR.ARSubsystems;
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
+    [Serializable]
     public class RequiresBodyTracking : RequiresARSubsystem<XRHumanBodySubsystem, XRHumanBodySubsystemDescriptor>
     {
         [SerializeField]

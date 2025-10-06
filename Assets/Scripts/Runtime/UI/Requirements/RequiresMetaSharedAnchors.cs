@@ -1,3 +1,4 @@
+using System;
 using UnityEngine.XR.ARSubsystems;
 #if METAOPENXR_2_2_OR_NEWER && (UNITY_ANDROID || UNITY_EDITOR)
 using UnityEngine.XR.OpenXR.Features.Meta;
@@ -5,6 +6,7 @@ using UnityEngine.XR.OpenXR.Features.Meta;
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
+    [Serializable]
     public class RequiresMetaSharedAnchors : RequiresARSubsystem<XRAnchorSubsystem, XRAnchorSubsystemDescriptor>
     {
         public override bool Evaluate()

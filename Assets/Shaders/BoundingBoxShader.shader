@@ -1,11 +1,5 @@
 Shader "Custom/BoundingBoxShader"
 {
-    Properties
-    {
-        _MainTex ("Texture", 2D) = "white" {}
-        _Color ("Color", color) = (1, 1, 1, 1)
-        _TexColorTint ("Texture Color", color) = (1, 1, 1, 1)
-    }
     // URP SubShader
     SubShader
     {
@@ -14,8 +8,7 @@ Shader "Custom/BoundingBoxShader"
             "com.unity.render-pipelines.universal": "12.0"
         }
 
-        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
-        Blend SrcAlpha OneMinusSrcAlpha
+        Tags { "RenderType"="Opaque" "Queue"="AlphaTest" }
         Pass
         {
             HLSLPROGRAM
@@ -40,11 +33,6 @@ Shader "Custom/BoundingBoxShader"
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
-            float4 _Color;
-            float4 _TexColorTint;
-
             v2f vert (appdata v)
             {
                 v2f o;
@@ -54,20 +42,14 @@ Shader "Custom/BoundingBoxShader"
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
                 o.vertex = mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
-                o.uv = v.uv * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.uv = float2(0, 0);
                 return o;
             }
 
             float4 frag (const v2f i) : SV_Target
             {
-                float4 finalColor = _Color;
-
-                float4 texCol = tex2D(_MainTex, i.uv);
-                if (texCol.a != 0)
-                {
-                    finalColor = _TexColorTint;
-                }
-                return finalColor;
+                clip(-1);
+                return float4(1, 1, 1, 1);
             }
             ENDHLSL
         }
@@ -75,8 +57,7 @@ Shader "Custom/BoundingBoxShader"
     // Built-in Render Pipeline SubShader
     SubShader
     {
-        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
-        Blend SrcAlpha OneMinusSrcAlpha
+        Tags { "RenderType"="Opaque" "Queue"="AlphaTest" }
         Pass
         {
             HLSLPROGRAM
@@ -101,34 +82,23 @@ Shader "Custom/BoundingBoxShader"
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
-            float4 _Color;
-            float4 _TexColorTint;
-
             v2f vert (appdata v)
             {
                 v2f o;
 
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_OUTPUT(v2f, o);
-                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); 
+                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
                 o.vertex = mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
-                o.uv = v.uv * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.uv = float2(0, 0);
                 return o;
             }
 
             float4 frag (const v2f i) : SV_Target
             {
-                float4 finalColor = _Color;
-
-                float4 texCol = tex2D(_MainTex, i.uv);
-                if (texCol.a != 0)
-                {
-                    finalColor = _TexColorTint;
-                }
-                return finalColor;
+                clip(-1);
+                return float4(1, 1, 1, 1);
             }
             ENDHLSL
         }

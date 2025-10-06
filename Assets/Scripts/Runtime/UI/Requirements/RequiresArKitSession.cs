@@ -1,9 +1,11 @@
+using System;
 #if UNITY_IOS && !UNITY_EDITOR
 using UnityEngine.XR.ARKit;
 #endif
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
+    [Serializable]
     public class RequiresArKitSession : RequiresSession
     {
         [SerializeField]

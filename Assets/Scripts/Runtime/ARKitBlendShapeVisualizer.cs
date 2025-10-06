@@ -4,6 +4,7 @@ using UnityEngine.XR.ARSubsystems;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine.XR.ARKit;
+using static UnityEngine.XR.ARSubsystems.XRResultStatus;
 #endif
 
 namespace UnityEngine.XR.ARFoundation.Samples
@@ -180,16 +181,21 @@ namespace UnityEngine.XR.ARFoundation.Samples
             }
 
 #if UNITY_IOS && !UNITY_EDITOR
-            using (var blendShapes = m_ARKitFaceSubsystem.GetBlendShapeCoefficients(m_Face.trackableId, Allocator.Temp))
+            var result = m_ARKitFaceSubsystem.TryGetBlendShapes(m_Face.trackableId, Allocator.Temp);
+            if (result.status.IsError())
             {
-                foreach (var featureCoefficient in blendShapes)
+                return;
+            }
+            using (var blendShapes = result.value)
+            {
+                foreach (var blendShape in blendShapes)
                 {
                     int mappedBlendShapeIndex;
-                    if (m_FaceArkitBlendShapeIndexMap.TryGetValue(featureCoefficient.blendShapeLocation, out mappedBlendShapeIndex))
+                    if (m_FaceArkitBlendShapeIndexMap.TryGetValue(blendShape.AsARKitBlendShapeLocation(), out mappedBlendShapeIndex))
                     {
                         if (mappedBlendShapeIndex >= 0)
                         {
-                            skinnedMeshRenderer.SetBlendShapeWeight(mappedBlendShapeIndex, featureCoefficient.coefficient * coefficientScale);
+                            skinnedMeshRenderer.SetBlendShapeWeight(mappedBlendShapeIndex, blendShape.weight * coefficientScale);
                         }
                     }
                 }

@@ -232,7 +232,24 @@ namespace UnityEngine.XR.ARFoundation.Samples
             switch (m_DisplayMode)
             {
                 case DisplayMode.Confidence:
-                    break;
+                {
+                    if (descriptor != null &&
+                        descriptor.environmentDepthConfidenceImageSupported == Supported.Supported)
+                    {
+                        break;
+                    }
+
+                    LogText("Environment depth confidence not supported on this device.");
+
+                    m_RawImage.texture = null;
+                    if (!Mathf.Approximately(m_TextureAspectRatio, k_DefaultTextureAspectRadio))
+                    {
+                        m_TextureAspectRatio = k_DefaultTextureAspectRadio;
+                        UpdateRawImage(false);
+                    }
+
+                    return;
+                }
                 case DisplayMode.HumanDepth:
                 case DisplayMode.HumanStencil:
                 {
@@ -258,7 +275,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     if (!Mathf.Approximately(m_TextureAspectRatio, k_DefaultTextureAspectRadio))
                     {
                         m_TextureAspectRatio = k_DefaultTextureAspectRadio;
-                        UpdateRawImage();
+                        UpdateRawImage(false);
                     }
 
                     return;
@@ -285,7 +302,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     if (!Mathf.Approximately(m_TextureAspectRatio, k_DefaultTextureAspectRadio))
                     {
                         m_TextureAspectRatio = k_DefaultTextureAspectRadio;
-                        UpdateRawImage();
+                        UpdateRawImage(false);
                     }
 
                     return;
@@ -427,9 +444,13 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// <summary>
         /// Update the raw image with the current configurations.
         /// </summary>
-        void UpdateRawImage()
+        void UpdateRawImage(bool supported = true)
         {
             Debug.Assert(m_RawImage != null, "no raw image");
+
+            m_RawImage.enabled = supported;
+            if (!supported)
+                return;
 
             // Determine the raw imge rectSize preserving the texture aspect ratio, matching the screen orientation,
             // and keeping a minimum dimension size.

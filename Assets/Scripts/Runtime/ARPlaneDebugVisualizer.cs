@@ -14,13 +14,6 @@ namespace UnityEngine.XR.ARFoundation
         [SerializeField, Tooltip("The prefab to visualize the plane orientation.")]
         GameObject m_PlaneNormalPrefab;
 
-        [SerializeField, Tooltip("Material used for planes that also have bounding boxes " +
-             "to handle z fighting visual artifacts.")]
-        Material m_SpecialPlaneMaterial;
-
-        [SerializeField]
-        LineRenderer m_Outline;
-
         [Header("Debug Options")]
         [SerializeField, Tooltip("Show plane normal visualizer.")]
         bool m_ShowPlaneNormal = true;
@@ -59,7 +52,7 @@ namespace UnityEngine.XR.ARFoundation
 
         [SerializeField, Tooltip("The mesh color used for planes when the tracking state is set to none.")]
         Color m_NoneTrackingMeshColor;
-        
+
         [SerializeField, Tooltip("The outline color gradient when the tracking state is set to none.")]
         Gradient m_NoneTrackingOutlineGradient;
 
@@ -107,12 +100,6 @@ namespace UnityEngine.XR.ARFoundation
 
             if (m_MeshRenderer == null)
                 m_MeshRenderer = GetComponent<MeshRenderer>();
-
-            if ((m_ARPlane.classifications & PlaneClassifications.Couch) == PlaneClassifications.Couch || 
-                (m_ARPlane.classifications & PlaneClassifications.Table) == PlaneClassifications.Table)
-            {
-                m_MeshRenderer.material = m_SpecialPlaneMaterial;
-            }
 
             if (m_ShowPlaneNormal && m_PlaneNormalPrefab == null)
             {
@@ -204,19 +191,16 @@ namespace UnityEngine.XR.ARFoundation
                     mat.SetTexture("_MainTex", m_TrackingTexture);
                     mat.mainTextureScale = new(20, 20);
                     mat.SetColor("_Color", m_TrackingMeshColor);
-                    m_Outline.colorGradient = m_TrackingOutlineGradient;
                     break;
                 case TrackingState.Limited:
                     mat.SetTexture("_MainTex", m_TrackingTexture);
                     mat.mainTextureScale = new(20, 20);
                     mat.SetColor("_Color", m_TrackingMeshColor);
-                    m_Outline.colorGradient = m_LimitedTrackingOutlineGradient;
                     break;
                 case TrackingState.None:
                     mat.SetTexture("_MainTex", m_NoneTrackingTexture);
                     mat.mainTextureScale = new(2, 2);
                     mat.SetColor("_Color", m_NoneTrackingMeshColor);
-                    m_Outline.colorGradient = m_NoneTrackingOutlineGradient;
                     break;
             }
         }

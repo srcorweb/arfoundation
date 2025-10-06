@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 22/22/2025
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d, type: 2}
   m_sharedMaterial: {fileID: 2119413175553802479, guid: 1f7f0625715b84771944413d2c6e3e3f,
     type: 2}
   m_fontSharedMaterials: []
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1434354311933179054
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.89411765, g: 0.89411765, b: 0.89411765, a: 0.101960786}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -890,8 +890,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f, type: 2}
-  m_sharedMaterial: {fileID: 2119413175553802479, guid: 1f7f0625715b84771944413d2c6e3e3f,
+  m_fontAsset: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d, type: 2}
+  m_sharedMaterial: {fileID: 2119413175553802479, guid: 39867e5449c844cbaa691f241ee9e41d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1509,8 +1509,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Not Saved
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f, type: 2}
-  m_sharedMaterial: {fileID: 2119413175553802479, guid: 1f7f0625715b84771944413d2c6e3e3f,
+  m_fontAsset: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d, type: 2}
+  m_sharedMaterial: {fileID: 2119413175553802479, guid: 39867e5449c844cbaa691f241ee9e41d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1845,7 +1845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2137,7 +2137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.89411765, g: 0.89411765, b: 0.89411765, a: 0.101960786}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.89411765, g: 0.89411765, b: 0.89411765, a: 0.101960786}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.54509807, g: 0.54509807, b: 0.54509807, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2372,7 +2372,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 12:12 PM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d, type: 2}
   m_sharedMaterial: {fileID: 2119413175553802479, guid: 1f7f0625715b84771944413d2c6e3e3f,
     type: 2}
   m_fontSharedMaterials: []
@@ -2531,7 +2531,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f,
+      objectReference: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d,
         type: 2}
     - target: {fileID: 4081640072494539067, guid: 634db463154ac4ceb9f5ad538d9b406a,
         type: 3}
@@ -2542,7 +2542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6575772568907693557, guid: 634db463154ac4ceb9f5ad538d9b406a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2647,7 +2647,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7937105750083073166, guid: 634db463154ac4ceb9f5ad538d9b406a,
         type: 3}
       propertyPath: m_Name
@@ -2753,7 +2753,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f,
+      objectReference: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d,
         type: 2}
     - target: {fileID: 4085630106743733006, guid: 670476902e80b45b182496ed363f5c73,
         type: 3}
@@ -2770,7 +2770,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6581486001801177024, guid: 670476902e80b45b182496ed363f5c73,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2875,7 +2875,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7940329149849792187, guid: 670476902e80b45b182496ed363f5c73,
         type: 3}
       propertyPath: m_Name
@@ -2927,7 +2927,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1002775257968259784, guid: 59693d8f6a03a402bb548237c3e6a6fd,
         type: 3}
       propertyPath: m_Name
@@ -2942,7 +2942,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4a85f63f5a94e1e87dc1daedceb8f7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4074921106074958771, guid: 59693d8f6a03a402bb548237c3e6a6fd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3047,7 +3047,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 1f7f0625715b84771944413d2c6e3e3f,
+      objectReference: {fileID: 11400000, guid: 39867e5449c844cbaa691f241ee9e41d,
         type: 2}
     - target: {fileID: 6586575398281127805, guid: 59693d8f6a03a402bb548237c3e6a6fd,
         type: 3}

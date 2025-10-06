@@ -56,15 +56,19 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
         void PlaceObjectAt(object sender, ARRaycastHit hitPose)
         {
+            Transform objectParent = null;
+            if (hitPose.trackable != null)
+                objectParent = hitPose.trackable.transform;
+
             if (m_SpawnedObject == null)
             {
-                m_SpawnedObject = Instantiate(m_PrefabToPlace, hitPose.trackable.transform.parent);
+                m_SpawnedObject = Instantiate(m_PrefabToPlace, objectParent);
             }
 
             var forward = hitPose.pose.rotation * Vector3.up;
             var offset = forward * k_PrefabHalfSize;
             m_SpawnedObject.transform.position = hitPose.pose.position + offset;
-            m_SpawnedObject.transform.parent = hitPose.trackable.transform.parent;
+            m_SpawnedObject.transform.parent = objectParent;
         }
     }
 }

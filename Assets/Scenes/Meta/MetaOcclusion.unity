@@ -209,6 +209,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 487602287}
+    - targetCorrespondingSourceObject: {fileID: 7957942351869948125, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1998402296}
+    - targetCorrespondingSourceObject: {fileID: 7957942351869948125, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1998402295}
+    - targetCorrespondingSourceObject: {fileID: 7957942351869948125, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1998402294}
     - targetCorrespondingSourceObject: {fileID: 8766024634595469697, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
         type: 3}
       insertIndex: -1
@@ -476,6 +488,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 856197673}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &856197675 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7430515637045249478, guid: b8f7382051281456a93ced9c504c48c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 856197673}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1002531937
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +923,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1998402292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3447509975066847121, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+    type: 3}
+  m_PrefabInstance: {fileID: 487602279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1998402293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7637194992220565852, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+    type: 3}
+  m_PrefabInstance: {fileID: 487602279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487602282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1998402294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487602282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa529c93736ab4db6dd582f742f591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PrefabToPlace: {fileID: 1934569588295450, guid: b34b6c8f1206a6844b983e23b9da0441,
+    type: 3}
+  m_RaycastHitEvent: {fileID: 11400000, guid: 6ddaf6abbb6e3f6489a5badc62d646ef, type: 2}
+--- !u!114 &1998402295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487602282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6d8843f352794429471e0be8129eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_XROrigin: {fileID: 1998402293}
+  m_RaycastManager: {fileID: 1998402296}
+  m_InputActionReferences: {fileID: 11400000, guid: 0601a0c2bd60343458dc7aca9d61251a,
+    type: 2}
+  m_ARRaycastHitEvent: {fileID: 11400000, guid: 6ddaf6abbb6e3f6489a5badc62d646ef,
+    type: 2}
+  m_TrackableType: 128
+  m_EventSystem: {fileID: 1998402292}
+  m_GraphicRaycaster: {fileID: 856197675}
+--- !u!114 &1998402296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487602282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_RaycastPrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
