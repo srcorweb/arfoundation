@@ -8,7 +8,7 @@ This project demonstrates the following AR Foundation implementations:
 | :------------- | :---------- |
 | **Android**    | [Google ARCore XR Plug-in](https://docs.unity3d.com/Packages/com.unity.xr.arcore@6.3/manual/index.html) |
 | **iOS**        | [Apple ARKit XR Plug-in](https://docs.unity3d.com/Packages/com.unity.xr.arkit@6.3/manual/index.html) |
-| **Meta Quest** | [Unity OpenXR: Meta](https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.2/manual/index.html) |
+| **Meta Quest** | [Unity OpenXR: Meta](https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.3/manual/index.html) |
 | **Android XR** | [Unity OpenXR: Android XR](https://docs.unity3d.com/Packages/com.unity.xr.androidxr-openxr@1.0/manual/index.html) |
 
 Each AR Foundation feature is used in a minimal sample scene with example code that you can modify or copy into your project.
