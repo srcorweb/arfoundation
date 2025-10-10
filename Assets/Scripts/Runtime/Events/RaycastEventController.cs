@@ -82,7 +82,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     m_GraphicRaycaster = null;
                 }
             }
-            
+
             m_HasGraphicRaycaster = m_GraphicRaycaster != null;
             m_PointerEventData = new PointerEventData(m_EventSystem);
         }
